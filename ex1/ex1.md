@@ -1,3 +1,3 @@
 * Create a freestyle project in Jenkins
 * Checkout this branch
-* run `gradle build`
+* use the gradle wrapper to run the gradle task `build`
