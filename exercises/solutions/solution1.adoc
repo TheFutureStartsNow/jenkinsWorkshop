@@ -1,0 +1,22 @@
+= Solution
+
+=== Building a freestyle project
+
+. Click `new Item` on the Dashboard
+. Enter the name `build` into the item name field
+. Enter https://github.com/TheFutureStartsNow/jenkinsWorkshop.git[https://github.com/TheFutureStartsNow/jenkinsWorkshop.git] to Github Project -&gt; Project URL
+. select `Git` in Source Management and enter `https://github.com/TheFutureStartsNow/jenkinsWorkshop.git` into the
+repository URL
+. Specify a branch for this exercise `ex1` to only check out this branch and not the complete repository
+. Add a build step to invoke Gradle
+. Select `use gradle wrapper` and enter `build` in the `Tasks` field
+. Click `Apply` and `Save`
+. Click on `Build now`
+. Check if everything went fine in the Console Output
+
+=== Testing a freestyle project
+
+. Perform the same steps as in `Testing a freestyle project`
+. Enter the task name `test` for the gradle wrapper
+. Within the `Build Triggers` section select `Build after other projects are built` and enter `build`
+. Run the `build` Project again and check in the `console output` if the `test`project was executed as well
