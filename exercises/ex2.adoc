@@ -8,11 +8,9 @@
 === Style your reports
 . Allow Jenkins to download external sources to have good looking test reports
 
-== More useful Plugins
-=== Build Pipeline
-. Download `Build Pipeline Plugin` and create a pipeline which connects
-the `build` and `test` freestyle project
+== Build Pipeline
+. Download `Build Pipeline Plugin` and create a view which shows your pipeline from the first exercise
 
-=== Install Blue Ocean
+== Install Blue Ocean
 . Download and install the plugin `Blue Ocean`
 . Check if the plugin was successfully installed by clicking `Open Blue Ocean` in the left menu
