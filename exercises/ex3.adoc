@@ -1,4 +1,5 @@
 = The Jenkinsfile
 
-== Create a simple Jenkinsfile
-
+== Pipeline
+. Create a pipeline project
+. Open it and

@@ -1,37 +1,6 @@
 = Solution
 
-== Install plugin to view test results
-. Go to the Jenkins Dashboard and click on `Manage Jenkins`
-. Select `Manage Plugins`
-. Go to the tab `Available` and search for `HTML Publisher`
-. Select it and click on `Download now and install after restart`
-. You can now either tell Jenkins to restart when the installation is complete
-or wait until everything is download and open the site `http://<yourIP>:<yourPort>/restart`
-. Go to your `test` project and click on `configure`
-. Add `Publish HTML report` as a `Post-build Action`
-. Click on `Add` to add a report
-. Now you have to specify the output folder for your reports. In our case it is:
-** `build/reports/tests/test/`
-. Click `Apply` and `Save`
-. Start your `test` project one more time to generate the report
-
-=== Style your reports
-. Go to `Manage Jenkins` and select `Script Console`
-. Enter `System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "sandbox; img-src *;")`
-. Confirm with `Run`
-. Start your `test`Project again and check the HTML report
-
-== Build Pipeline
-. Install the `Build Pipeline Plugin`
-. Go to the Dashboard and click on the `+` sign and select `Build Pipeline View`
-. Enter a name for your Build Pipeline View`
-. Scroll down and click on `apply and `Ok`
-. Go to your Dashboard and switch to your build pipeline view
-. Start the pipeline to test if it works as expected
-
-=== Blue Ocean
-. Download and install the plugin `Blue Ocean`
-. Click on `Open Blue Ocean in the left menu
-. Now you should see your two freestyle projects
-. Click on the name of the project
-. Click on run to start
+== Pipeline
+. Create a pipeline project
+. Open it and go to Pipeline Syntax
+. Select `checkout General SCM`
