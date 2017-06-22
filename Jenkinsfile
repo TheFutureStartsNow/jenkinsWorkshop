@@ -1,19 +1,20 @@
 pipeline {
     agent any
-
-    stage('Build') {
-        steps {
-            gradle build
+    stages {
+        stage('Build') {
+            steps {
+                gradle build
+            }
         }
-    }
-    stage('Test'){
-        steps {
-            gradle test
+        stage('Test'){
+            steps {
+                gradle test
+            }
         }
-    }
-    stage('Deploy') {
-        steps {
-            echo 'deployed'
+        stage('Deploy') {
+            steps {
+                echo 'deployed'
+            }
         }
     }
 }
