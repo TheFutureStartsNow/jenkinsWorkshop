@@ -1,12 +1,12 @@
-== Freestyle Projects
+= Freestyle Projects
 
-=== Building a freestyle project
+== Building a freestyle project
 
 . Create a freestyle project in Jenkins
 . Checkout the branch `ex1` from https://github.com/TheFutureStartsNow/jenkinsWorkshop.git[https://github.com/TheFutureStartsNow/jenkinsWorkshop.git]
 . Use the gradle wrapper to run the gradle task `build`
 
-=== Testing a freestyle project
+== Testing a freestyle project
 
 . Create a new freestyle project in Jenkins
 . Checkout the branch `ex1` from https://github.com/TheFutureStartsNow/jenkinsWorkshop.git[https://github.com/TheFutureStartsNow/jenkinsWorkshop.git]
