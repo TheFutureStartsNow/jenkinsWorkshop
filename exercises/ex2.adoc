@@ -11,5 +11,5 @@
 . Configure it to show the test results for each run
 
 == Style your reports
-. Allow Jenkins to download external sources to have a good looking test reports
+. Allow Jenkins to download external sources to have good looking test reports
 
