@@ -14,15 +14,4 @@ class AppSpec extends Specification {
         then:
         result != null
     }
-
-    def "a failing testcase"() {
-        setup:
-        def app = new App()
-
-        when:
-        def result = app.greeting
-
-        then:
-        result == null
-    }
 }

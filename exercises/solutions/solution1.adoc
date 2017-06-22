@@ -1,6 +1,6 @@
 = Solution
 
-=== Building a freestyle project
+== Building a freestyle project
 
 . Click `new Item` on the Dashboard
 . Enter the name `build` into the item name field
@@ -14,7 +14,7 @@ repository URL
 . Click on `Build now`
 . Check if everything went fine in the Console Output
 
-=== Testing a freestyle project
+== Testing a freestyle project
 
 . Perform the same steps as in `Testing a freestyle project`
 . Enter the task name `test` for the gradle wrapper
