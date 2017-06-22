@@ -15,6 +15,13 @@ or wait until everything is download and open the site `http://<yourIP>:<yourPor
 . Go to your `test` project and click on `configure`
 . Add `Publish HTML report` as a `Post-build Action`
 . Click on `Add` to add a report
+. Now you have to specify the output folder for your reports. In our case it is:
+** `build/reports/tests/test/`
 . Click `Apply` and `Save`
 . Start your `test` project one more time to generate the report
-.
+
+==== Style your reports
+. Go to `Manage Jenkins` and select `Script Console`
+. Enter `System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "sandbox; img-src *;")`
+. Confirm with `Run`
+. Start your `test`Project again and check the HTML report
