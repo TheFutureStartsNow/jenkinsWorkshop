@@ -1,0 +1,20 @@
+= Solution
+
+=== Install Blue Ocean
+
+. Go to the Jenkins Dashboard and click on `Manage Jenkins`
+. Select `Manage Plugins`
+. Go to the tab `Available` and search for `Blue Ocean`
+. Select it and click on `Download now and install after restart`
+. You can now either tell Jenkins to restart when the installation is complete
+or wait until everything is download and open the site `http://<yourIP>:<yourPort>/restart`
+
+=== Install plugin to view test results
+
+. Do the same as for the section `Install Blue Ocean` but search for `HTML Publisher`
+. Go to your `test` project and click on `configure`
+. Add `Publish HTML report` as a `Post-build Action`
+. Click on `Add` to add a report
+. Click `Apply` and `Save`
+. Start your `test` project one more time to generate the report
+.
