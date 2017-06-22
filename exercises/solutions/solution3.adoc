@@ -4,3 +4,5 @@
 . Create a pipeline project
 . Open it and go to Pipeline Syntax
 . Select `checkout General SCM`
+. Add the repository URL `https://github.com/TheFutureStartsNow/jenkinsWorkshop`
+. Select the branch `*/jenkinsfile`
