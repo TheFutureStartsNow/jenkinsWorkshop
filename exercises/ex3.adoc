@@ -1,5 +1,17 @@
 = The Jenkinsfile
 
-== Pipeline
+== Hello World Pipeline
 . Create a pipeline project
-. Open it and
+. Define a pipeline, which returns `Hello Jenkinsuser`
+
+== Pipeline with three stages
+. Create a new pipeline project
+. Define a pipeline, which has three stages
+
+== Checkout code and run gradle
+. Change your previous script to checkout the repository https://github.com/TheFutureStartsNow/jenkinsWorkshop
+. Change two of your steps to run the `gradle build` and `gradle test` command
+
+== Conditions
+. Change your Jenkinsfile to print a message in case your steps were successful
+

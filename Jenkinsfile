@@ -18,4 +18,10 @@ pipeline {
             }
         }
     }
+    post {
+        success {
+            echo "Wow, it worked"
+        }
+        fai
+    }
 }

@@ -1,7 +1,6 @@
 = Solution
 
 == Building a freestyle project
-
 . Click `new Item` on the Dashboard
 . Enter the name `build` into the item name field
 . Enter https://github.com/TheFutureStartsNow/jenkinsWorkshop.git[https://github.com/TheFutureStartsNow/jenkinsWorkshop.git] to Github Project -&gt; Project URL
@@ -15,8 +14,13 @@ repository URL
 . Check if everything went fine in the Console Output
 
 == Testing a freestyle project
-
 . Perform the same steps as in `Testing a freestyle project`
 . Enter the task name `test` for the gradle wrapper
 . Within the `Build Triggers` section select `Build after other projects are built` and enter `build`
 . Run the `build` Project again and check in the `console output` if the `test`project was executed as well
+
+== Archive artifacts
+. Open the `build` project
+. Select `Archive the artifacts` in `Post-build Actions`
+. Enter `build/**/*.jar`
+. Run the your project again and check if you can see `Build Artifacts`

@@ -1,8 +1,98 @@
 = Solution
 
-== Pipeline
+== Hello World Pipeline
 . Create a pipeline project
-. Open it and go to Pipeline Syntax
-. Select `checkout General SCM`
-. Add the repository URL `https://github.com/TheFutureStartsNow/jenkinsWorkshop`
-. Select the branch `*/jenkinsfile`
+. Open it and go to Configure
+. Enter the following as pipeline script
+`node {
+    echo 'Hello Jenkinsuser'
+ }`
+. Click on `Apply` and `Save`
+. Build your pipeline to check if it works
+
+== Pipeline with three stages
+. Create a new pipeline project
+. Open it and go to Configure
+. Enter the following as pipeline script
+[source,groovy]
+----
+pipeline {
+     agent any
+     stages {
+         stage('Build') {
+             steps {
+               echo 'build'
+             }
+         }
+         stage('Test'){
+             steps {
+                 echo 'test'
+             }
+         }
+         stage('Deploy') {
+             steps {
+                 echo 'deployed'
+             }
+         }
+     }
+ }
+----
+
+== Checkout code and run gradle
+. Change your script to the following:
+[source,groovy]
+----
+pipeline {
+     agent any
+     stages {
+         stage('Build') {
+             steps {
+                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/TheFutureStartsNow/jenkinsWorkshop']]])
+                 sh './gradlew build'
+             }
+         }
+         stage('Test'){
+             steps {
+                 sh './gradlew test'
+             }
+         }
+         stage('Deploy') {
+             steps {
+                 echo 'deployed'
+             }
+         }
+     }
+ }
+----
+
+== Conditions
+. Change your script to the following:
+[source,groovy]
+----
+pipeline {
+     agent any
+     stages {
+         stage('Build') {
+             steps {
+                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/TheFutureStartsNow/jenkinsWorkshop']]])
+                 sh './gradlew build'
+             }
+         }
+         stage('Test'){
+             steps {
+                 sh './gradlew test'
+             }
+         }
+         stage('Deploy') {
+             steps {
+                 echo 'deployed'
+             }
+         }
+         post {
+             success {
+               echo "Wow, it worked"
+             }
+         }
+     }
+ }
+----

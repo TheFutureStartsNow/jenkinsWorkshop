@@ -1,14 +1,15 @@
 = Freestyle Projects
 
 == Building a freestyle project
-
 . Create a freestyle project in Jenkins
 . Checkout the branch `ex1` from https://github.com/TheFutureStartsNow/jenkinsWorkshop.git[https://github.com/TheFutureStartsNow/jenkinsWorkshop.git]
 . Use the gradle wrapper to run the gradle task `build`
 
 == Testing a freestyle project
-
 . Create a new freestyle project in Jenkins
 . Checkout the branch `ex1` from https://github.com/TheFutureStartsNow/jenkinsWorkshop.git[https://github.com/TheFutureStartsNow/jenkinsWorkshop.git]
 . Use the gradle wrapper to run the gradle task `test`
 . Configure your freestyle project for testing to run after the build project was executed
+
+== Archive artifacts
+. Archive the jar file from build/libs/
