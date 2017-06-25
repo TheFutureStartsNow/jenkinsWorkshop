@@ -22,6 +22,5 @@ pipeline {
         success {
             echo "Wow, it worked"
         }
-        fai
     }
 }
