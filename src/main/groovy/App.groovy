@@ -7,7 +7,13 @@ class App {
     }
 
     static void main(String[] args) {
-        def someunusedvar;
         println new App().greeting
     }
+
+    void CrApNaMe(){
+        if (false) {
+            def someunusedvar;
+        }
+    }
+
 }

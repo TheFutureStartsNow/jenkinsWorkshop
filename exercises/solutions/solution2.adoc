@@ -27,6 +27,13 @@ or wait until everything is download and open the site `http://<yourIP>:<yourPor
 .. `Checkstyle Plug-in`
 .. `PMD Plugin`
 .. `FindBugs Plug-in`
+. Add build steps to your jenkins project
+.. Run the gradle task: `checkstyleMain`
+.. Run the gradle task: `pmdMain`
+.. Run the gradle task: findbugsMain``
+
+
+
 
 == Build Pipeline
 . Install the `Build Pipeline Plugin`
