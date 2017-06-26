@@ -15,3 +15,5 @@
 == Conditions
 . Change your Jenkinsfile to print a message in case your steps were successful
 
+== Multibranch Pipeline
+. Create a new multibranch pipeline

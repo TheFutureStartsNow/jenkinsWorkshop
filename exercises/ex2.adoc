@@ -8,6 +8,9 @@
 === Style your reports
 . Allow Jenkins to download external sources to have good looking test reports
 
+== Add static code analysis
+
+
 == Build Pipeline
 . Download `Build Pipeline Plugin` and create a view which shows your pipeline from the first exercise
 

@@ -13,3 +13,7 @@
 
 == Archive artifacts
 . Archive the jar file from build/libs/
+
+== Notification
+. Configure Jenkins to send an email to you if the build fails
+. Test it by letting your build fail (i.e. change the archive jar to an invalid name)

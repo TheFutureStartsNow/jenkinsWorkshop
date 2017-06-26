@@ -24,3 +24,15 @@ repository URL
 . Select `Archive the artifacts` in `Post-build Actions`
 . Enter `build/**/*.jar`
 . Run the your project again and check if you can see `Build Artifacts`
+
+== Notification
+. If you want to use your google account you need to login and go to Security Settings
+. Allow not secure apps to connect
+. Go to Manage Jenkins and Configure System
+. Scroll down to `E-Mail Notifications` and enter
+.. SMTP Server: smtp.google.com`
+.. Default user e-mail suffix: @gmail.com`
+.. Tick `Use SMTP Authentication``
+.. Tick `Use SSL`
+.. SMTP Port: `465`
+. Test the configuration by ticking the last checkbox

@@ -21,6 +21,13 @@ or wait until everything is download and open the site `http://<yourIP>:<yourPor
 . Confirm with `Run`
 . Start your `test`Project again and check the HTML report
 
+== Add static code analysis
+. Download the plugins
+.. `Static Analysis Collector Plug-in`
+.. `Checkstyle Plug-in`
+.. `PMD Plugin`
+.. `FindBugs Plug-in`
+
 == Build Pipeline
 . Install the `Build Pipeline Plugin`
 . Go to the Dashboard and click on the `+` sign and select `Build Pipeline View`
