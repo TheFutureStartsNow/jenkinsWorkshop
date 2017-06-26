@@ -9,7 +9,10 @@
 . Allow Jenkins to download external sources to have good looking test reports
 
 == Add static code analysis
-
+. Install `PMD`, `Findbugs` and `Checkstlye`
+. Install `Static Analysis Collector Plug-in`
+. Configure Findbugs to get results from build/reports/findbugs/*.xml``
+. Run your build project several times to see a trend report
 
 == Build Pipeline
 . Download `Build Pipeline Plugin` and create a view which shows your pipeline from the first exercise

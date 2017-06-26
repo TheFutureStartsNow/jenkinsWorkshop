@@ -10,9 +10,9 @@ class App {
         println new App().greeting
     }
 
-    void CrApNaMe(){
+    void CrApNaMe(def a, def b, def c, def d, def e, def f, def g, def h){
         if (false) {
-            def someunusedvar;
+            def SOMEUNUSEDVAr;
         }
     }
 
