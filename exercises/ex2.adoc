@@ -11,6 +11,7 @@
 == Add static code analysis
 . Install `PMD`, `Findbugs` and `Checkstlye`
 . Install `Static Analysis Collector Plug-in`
+. Configure Jenkins to run the gradle task `check`
 . Configure Findbugs to get results from build/reports/findbugs/*.xml``
 . Run your build project several times to see a trend report
 
