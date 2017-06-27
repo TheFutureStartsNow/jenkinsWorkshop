@@ -17,3 +17,4 @@
 
 == Multibranch Pipeline
 . Create a new multibranch pipeline
+. Build it

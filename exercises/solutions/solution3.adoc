@@ -96,3 +96,8 @@ pipeline {
      }
  }
 ----
+== Multibranch Pipeline
+. Create new project and select Multibranch pipeline
+. Configure it to use the repository
+. Scan for Jenkinsfiles
+. Built the project
